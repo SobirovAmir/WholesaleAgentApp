@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "amir7787",
+      "password": "pass",
+      "role": "agent",
+      "firstName": "Amir",
+      "lastName": "Sobirjonov",
+      "phone": "+998901234567",
+      "email": "sobirjonovamir@example.com",
+      "soldProducts": 2590,
+      "storeVisits": 305,
+      "stores": [
+        {
+          "id": 1,
+          "name": "Магазин 1",
+          "latitude": 55.7558,
+          "longitude": 37.6173
+        },
+        {
+          "id": 2,
+          "name": "Магазин 2",
+          "latitude": 55.7520,
+          "longitude": 37.6155
+        },
+        {
+          "id": 3,
+          "name": "Магазин 3",
+          "latitude": 55.7497,
+          "longitude": 37.6214
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": 100,
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": 200,
+      "stock": 30
+    }
+  ],
+
+  "visits": [
+    {
+      "id": 1,
+      "userId": 1,
+      "storeId": 1,
+      "date": "2025-04-06T10:30:00Z",
+      "notes": "Всё в порядке, приняты заказы."
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "userId": 1,
+      "productId": 1,
+      "storeId": 1,
+      "quantity": 5,
+      "date": "2025-04-06T11:00:00Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "action": "Авторизация",
+      "timestamp": "2025-04-06T09:45:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "action": "Посещение магазина Store 1",
+      "timestamp": "2025-04-06T10:30:00Z"
+    }
+  ]
+}
